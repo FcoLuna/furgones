@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Nombre:</strong>
+  <%= @apoderado.nombre %>
+</p>
+
+<p>
+  <strong>Telefono:</strong>
+  <%= @apoderado.telefono %>
+</p>
+
+<p>
+  <strong>Paga:</strong>
+  <%= @apoderado.paga %>
+</p>
+
+<%= link_to 'Edit', edit_apoderado_path(@apoderado) %> |
+<%= link_to 'Back', apoderados_path %>

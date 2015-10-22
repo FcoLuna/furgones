@@ -1,0 +1,29 @@
+<h1>Listing apoderados</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Nombre</th>
+      <th>Telefono</th>
+      <th>Paga</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @apoderados.each do |apoderado| %>
+      <tr>
+        <td><%= apoderado.nombre %></td>
+        <td><%= apoderado.telefono %></td>
+        <td><%= apoderado.paga %></td>
+        <td><%= link_to 'Show', apoderado %></td>
+        <td><%= link_to 'Edit', edit_apoderado_path(apoderado) %></td>
+        <td><%= link_to 'Destroy', apoderado, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Apoderado', new_apoderado_path %>

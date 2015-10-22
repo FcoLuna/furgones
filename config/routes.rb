@@ -1,7 +1,9 @@
 Rails.application.routes.draw do
-  resources :mujers
+  resources :colegios
 
-  resources :personas
+  resources :niños
+
+  resources :apoderados
 
   root 'personas#index'
   # The priority is based upon order of creation: first created -> highest priority.

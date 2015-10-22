@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Nombre:</strong>
+  <%= @colegio.nombre %>
+</p>
+
+<p>
+  <strong>Telefono:</strong>
+  <%= @colegio.telefono %>
+</p>
+
+<%= link_to 'Editar', edit_colegio_path(@colegio) %> |
+<%= link_to 'Atras', colegios_path %>

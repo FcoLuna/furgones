@@ -1,0 +1,29 @@
+<%= form_for(@apoderado) do |f| %>
+  <% if @apoderado.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@apoderado.errors.count, "error") %> prohibited this apoderado from being saved:</h2>
+
+       <ul>
+      <% @apoderado.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :nombre %><br>
+    <%= f.text_field :nombre %>
+  </div>
+  <div class="field">
+    <%= f.label :telefono %><br>
+    <%= f.number_field :telefono %>
+  </div>
+  <div class="field">
+    <%= f.label :paga %><br>
+    <%= f.number_field :paga %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,27 @@
+<h1>Listing colegios</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Nombre</th>
+      <th>Telefono</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @colegios.each do |colegio| %>
+      <tr>
+        <td><%= colegio.nombre %></td>
+        <td><%= colegio.telefono %></td>
+        <td><%= link_to 'Show', colegio %></td>
+        <td><%= link_to 'Editar', edit_colegio_path(colegio) %></td>
+        <td><%= link_to 'Eliminar', colegio, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Colegio', new_colegio_path %>
