@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Nombre:</strong>
+  <%= @nino.nombre %>
+</p>
+
+<p>
+  <strong>Apoderado:</strong>
+  <%= @nino.apoderado_id %>
+</p>
+
+<p>
+  <strong>Horario:</strong>
+  <%= @nino.horario %>
+</p>
+
+<p>
+  <strong>Colegio:</strong>
+  <%= @nino.colegio_id %>
+</p>
+
+<%= link_to 'Edit', edit_nino_path(@nino) %> |
+<%= link_to 'Back', ninos_path %>

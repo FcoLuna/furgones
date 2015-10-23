@@ -1,6 +1,6 @@
 class CreateNiños < ActiveRecord::Migration
   def change
-    create_table :niños do |t|
+    create_table :ninos do |t|
       t.string :nombre
       t.integer :apoderado_id
       t.string :horario
