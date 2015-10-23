@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   resources :colegios
 
-  resources :niños
+  resources :ninos
 
   resources :apoderados
 

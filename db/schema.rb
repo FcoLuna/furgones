@@ -11,11 +11,35 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151022155324) do
+ActiveRecord::Schema.define(version: 20151022190522) do
+
+  create_table "apoderados", force: true do |t|
+    t.string   "nombre"
+    t.integer  "telefono"
+    t.integer  "paga"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "colegios", force: true do |t|
+    t.string   "nombre"
+    t.integer  "telefono"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "mujers", force: true do |t|
     t.integer  "edad"
     t.string   "sexo"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "ninos", force: true do |t|
+    t.string   "nombre"
+    t.integer  "apoderado_id"
+    t.string   "horario"
+    t.integer  "colegio_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
