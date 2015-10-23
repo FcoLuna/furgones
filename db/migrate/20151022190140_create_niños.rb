@@ -1,4 +1,4 @@
-class CreateNiños < ActiveRecord::Migration
+class CreateNinos < ActiveRecord::Migration
   def change
     create_table :ninos do |t|
       t.string :nombre
