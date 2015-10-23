@@ -4,7 +4,7 @@ class NinosController < ApplicationController
   # GET /ninos
   # GET /ninos.json
   def index
-    @niños = Nino.all
+    @ninos = Nino.all
   end
 
   # GET /ninos/1
@@ -14,7 +14,7 @@ class NinosController < ApplicationController
 
   # GET /ninos/new
   def new
-    @niño = Nino.new
+    @nino = Nino.new
   end
 
   # GET /ninos/1/edit
@@ -24,11 +24,11 @@ class NinosController < ApplicationController
   # POST /ninos
   # POST /ninos.json
   def create
-    @niño = Nino.new(nino_params)
+    @nino = Nino.new(nino_params)
 
     respond_to do |format|
-      if @niño.save
-        format.html { redirect_to @niño, notice: 'Nino was successfully created.' }
+      if @nino.save
+        format.html { redirect_to @nino, notice: 'Nino was successfully created.' }
         format.json { render :show, status: :created, location: @nino }
       else
         format.html { render :new }
@@ -41,7 +41,7 @@ class NinosController < ApplicationController
   # PATCH/PUT /ninos/1.json
   def update
     respond_to do |format|
-      if @niño.update(nino_params)
+      if @nino.update(nino_params)
         format.html { redirect_to @nino, notice: 'Nino was successfully updated.' }
         format.json { render :show, status: :ok, location: @nino }
       else
@@ -54,7 +54,7 @@ class NinosController < ApplicationController
   # DELETE /ninos/1
   # DELETE /ninos/1.json
   def destroy
-    @niño.destroy
+    @nino.destroy
     respond_to do |format|
       format.html { redirect_to ninos_url, notice: 'Nino was successfully destroyed.' }
       format.json { head :no_content }
