@@ -40,10 +40,10 @@ class NinosControllerTest < ActionController::TestCase
   end
 
   test "should destroy nino" do
-    assert_difference('Niño.count', -1) do
-      delete :destroy, id: @niño
+    assert_difference('Nino.count', -1) do
+      delete :destroy, id: @nino
     end
 
-    assert_redirected_to niños_path
+    assert_redirected_to ninos_path
   end
 end
