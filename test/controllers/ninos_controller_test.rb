@@ -8,7 +8,7 @@ class NinosControllerTest < ActionController::TestCase
   test "should get index" do
     get :index
     assert_response :success
-    assert_not_nil assigns(:niños)
+    assert_not_nil assigns(:ninos)
   end
 
   test "should get new" do
@@ -16,15 +16,15 @@ class NinosControllerTest < ActionController::TestCase
     assert_response :success
   end
 
-  test "should create niño" do
-    assert_difference('Niño.count') do
-      post :create, niño: { apoderado_id: @nino.apoderado_id, colegio_id: @nino.colegio_id, horario: @niño.horario, nombre: @niño.nombre }
+  test "should create nino" do
+    assert_difference('Nino.count') do
+      post :create, nino: { apoderado_id: @nino.apoderado_id, colegio_id: @nino.colegio_id, horario: @nino.horario, nombre: @nino.nombre }
     end
 
-    assert_redirected_to niño_path(assigns(:niño))
+    assert_redirected_to nino_path(assigns(:nino))
   end
 
-  test "should show niño" do
+  test "should show nino" do
     get :show, id: @nino
     assert_response :success
   end
@@ -35,13 +35,13 @@ class NinosControllerTest < ActionController::TestCase
   end
 
   test "should update niño" do
-    patch :update, id: @nino, niño: { apoderado_id: @niño.apoderado_id, colegio_id: @niño.colegio_id, horario: @niño.horario, nombre: @niño.nombre }
-    assert_redirected_to niño_path(assigns(:niño))
+    patch :update, id: @nino, nino: { apoderado_id: @nino.apoderado_id, colegio_id: @nino.colegio_id, horario: @nino.horario, nombre: @nino.nombre }
+    assert_redirected_to nino_path(assigns(:nino))
   end
 
-  test "should destroy niño" do
+  test "should destroy nino" do
     assert_difference('Niño.count', -1) do
-      delete :destroy, id: @nino
+      delete :destroy, id: @niño
     end
 
     assert_redirected_to niños_path
