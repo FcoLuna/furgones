@@ -1,4 +1,4 @@
-<h1>Listing apoderados</h1>
+<h1>Lista de apoderados</h1>
 
 <table>
   <thead>
@@ -16,9 +16,9 @@
         <td><%= apoderado.nombre %></td>
         <td><%= apoderado.telefono %></td>
         <td><%= apoderado.paga %></td>
-        <td><%= link_to 'Show', apoderado %></td>
-        <td><%= link_to 'Edit', edit_apoderado_path(apoderado) %></td>
-        <td><%= link_to 'Destroy', apoderado, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Mostrar', apoderado %></td>
+        <td><%= link_to 'Editar', edit_apoderado_path(apoderado) %></td>
+        <td><%= link_to 'Eliminar', apoderado, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>
@@ -26,4 +26,4 @@
 
 <br>
 
-<%= link_to 'New Apoderado', new_apoderado_path %>
+<%= link_to 'Nuevo Apoderado', new_apoderado_path %>

@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Patente:</strong>
+  <%= @furgon.patente %>
+</p>
+
+<p>
+  <strong>Estado:</strong>
+  <%= @furgon.estado %>
+</p>
+
+<%= link_to 'Edit', edit_furgon_path(@furgon) %> |
+<%= link_to 'Back', furgons_path %>

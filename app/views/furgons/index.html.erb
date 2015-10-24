@@ -1,0 +1,27 @@
+<h1>Listing furgons</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Patente</th>
+      <th>Estado</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @furgons.each do |furgon| %>
+      <tr>
+        <td><%= furgon.patente %></td>
+        <td><%= furgon.estado %></td>
+        <td><%= link_to 'Show', furgon %></td>
+        <td><%= link_to 'Edit', edit_furgon_path(furgon) %></td>
+        <td><%= link_to 'Destroy', furgon, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Furgon', new_furgon_path %>

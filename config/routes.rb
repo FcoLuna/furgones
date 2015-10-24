@@ -1,11 +1,15 @@
 Rails.application.routes.draw do
+  get 'bienvenida/index'
+
+  resources :furgons
+
   resources :colegios
 
   resources :ninos
 
   resources :apoderados
 
-  root 'colegios#index'
+  root 'bienvenida#index'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
