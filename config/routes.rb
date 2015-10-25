@@ -1,11 +1,13 @@
 Rails.application.routes.draw do
+  resources :trabajadors
+
+  resources :alumnos
+
   get 'bienvenida/index'
 
   resources :furgons
 
   resources :colegios
-
-  resources :ninos
 
   resources :apoderados
 

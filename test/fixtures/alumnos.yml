@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  nombre: MyString
+  horario: MyString
+  id_apoderado: 1
+  id_colegio: 1
+  id_furgon_integer: MyString
+
+two:
+  nombre: MyString
+  horario: MyString
+  id_apoderado: 1
+  id_colegio: 1
+  id_furgon_integer: MyString
