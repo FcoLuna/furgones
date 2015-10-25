@@ -1,6 +1,8 @@
 <h1>Lista de apoderados</h1>
 
-<table>
+
+<div class="panel panel-default">
+<table class="table">
   <thead>
     <tr>
       <th>Nombre</th>
@@ -16,13 +18,16 @@
         <td><%= apoderado.nombre %></td>
         <td><%= apoderado.telefono %></td>
         <td><%= apoderado.paga %></td>
-        <td><%= link_to 'Mostrar', apoderado %></td>
-        <td><%= link_to 'Editar', edit_apoderado_path(apoderado) %></td>
-        <td><%= link_to 'Eliminar', apoderado, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <div class="btn-group btn-primary">
+          <td><button type="button" class="btn btn-primary"> <%= link_to 'Mostrar', apoderado %></button></td>
+          <td><button type="button" class="btn btn-warning"><%= link_to 'Editar', edit_apoderado_path(apoderado) %></button></td>
+          <td><button type="button" class="btn btn-danger"><%= link_to 'Eliminar', apoderado, method: :delete, data: { confirm: 'Esta seguro?' } %></button></td>
+        </div>
       </tr>
     <% end %>
   </tbody>
 </table>
+</div>
 
 <br>
 

@@ -7,7 +7,19 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+<header>
+  <div class="container">
+    <ul class="nav nav-pills">
+      <li role="presentation" class="active"><%= link_to "Inicio", root_path%></li>
+      <li role="presentation"><%= link_to 'Apoderados', controller: 'apoderados' %></li>
+      <li role="presentation"><%= link_to 'Niños', controller: 'ninos' %></li>
+      <li role="presentation"><%= link_to 'Colegios', controller: 'colegios' %></li>
+      <li role="presentation"><%= link_to 'Furgones', controller: 'furgons' %></li>
+    </ul>
+  </div>
 
+
+</header>
 <%= yield %>
 
 </body>
