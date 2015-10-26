@@ -14,9 +14,9 @@
       <tr>
         <td><%= colegio.nombre %></td>
         <td><%= colegio.telefono %></td>
-        <td><%= link_to 'Show', colegio %></td>
+        <td><%= link_to 'Mostrar', colegio %></td>
         <td><%= link_to 'Editar', edit_colegio_path(colegio) %></td>
-        <td><%= link_to 'Eliminar', colegio, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Eliminar', colegio, method: :delete, data: { confirm: 'Esta seguro?' } %></td>
       </tr>
     <% end %>
   </tbody>

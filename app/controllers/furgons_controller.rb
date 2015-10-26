@@ -4,7 +4,7 @@ class FurgonsController < ApplicationController
   # GET /furgons
   # GET /furgons.json
   def index
-    @furgons = Furgon.all
+    @furgones = Furgon.all
   end
 
   # GET /furgons/1
