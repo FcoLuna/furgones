@@ -1,4 +1,4 @@
-<h1>Listing furgons</h1>
+<h1>Lista furgones</h1>
 
 <table>
   <thead>
@@ -14,9 +14,9 @@
       <tr>
         <td><%= furgon.patente %></td>
         <td><%= furgon.estado %></td>
-        <td><%= link_to 'Show', furgon %></td>
-        <td><%= link_to 'Edit', edit_furgon_path(furgon) %></td>
-        <td><%= link_to 'Destroy', furgon, method: :delete, data: { confirm: 'Esta seguro?' } %></td>
+        <td><%= link_to 'Mostrar', furgon %></td>
+        <td><%= link_to 'Editar', edit_furgon_path(furgon) %></td>
+        <td><%= link_to 'Eliminar', furgon, method: :delete, data: { confirm: 'Esta seguro?' } %></td>
       </tr>
     <% end %>
   </tbody>

@@ -11,7 +11,17 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151023193739) do
+ActiveRecord::Schema.define(version: 20151026005251) do
+
+  create_table "alumnos", force: true do |t|
+    t.string   "nombre"
+    t.string   "horario"
+    t.integer  "id_apoderado"
+    t.integer  "id_colegio"
+    t.string   "id_furgon_integer"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "apoderados", force: true do |t|
     t.string   "nombre"
@@ -35,26 +45,18 @@ ActiveRecord::Schema.define(version: 20151023193739) do
     t.datetime "updated_at"
   end
 
-  create_table "mujers", force: true do |t|
-    t.integer  "edad"
-    t.string   "sexo"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
   create_table "ninos", force: true do |t|
     t.string   "nombre"
-    t.integer  "apoderado_id"
     t.string   "horario"
-    t.integer  "colegio_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
-  create_table "personas", force: true do |t|
+  create_table "trabajadors", force: true do |t|
     t.string   "nombre"
-    t.integer  "rut"
-    t.date     "nacimiento"
+    t.string   "tipo"
+    t.integer  "sueldo"
+    t.integer  "id_furgon"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
