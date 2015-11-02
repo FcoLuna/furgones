@@ -38,15 +38,14 @@ ActiveRecord::Schema.define(version: 20151025154331) do
     t.datetime "updated_at"
   end
 
-  create_table "furgons", force: true do |t|
+  create_table "furgones", force: true do |t|
     t.string   "patente"
     t.string   "estado"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
-
-  create_table "trabajadors", force: true do |t|
+  create_table "trabajadores", force: true do |t|
     t.string   "nombre"
     t.string   "tipo"
     t.integer  "sueldo"
