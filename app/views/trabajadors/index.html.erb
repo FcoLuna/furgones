@@ -1,4 +1,4 @@
-<h1>Listing trabajadors</h1>
+<h1>Lista de trabajadores</h1>
 
 <table>
   <thead>
@@ -18,9 +18,9 @@
         <td><%= trabajador.tipo %></td>
         <td><%= trabajador.sueldo %></td>
         <td><%= trabajador.id_furgon %></td>
-        <td><%= link_to 'Show', trabajador %></td>
-        <td><%= link_to 'Edit', edit_trabajador_path(trabajador) %></td>
-        <td><%= link_to 'Destroy', trabajador, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Mostrar', trabajador %></td>
+        <td><%= link_to 'Editar', edit_trabajador_path(trabajador) %></td>
+        <td><%= link_to 'Eliminar', trabajador, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>
@@ -28,4 +28,4 @@
 
 <br>
 
-<%= link_to 'New Trabajador', new_trabajador_path %>
+<%= link_to 'nuevo Trabajador', new_trabajador_path %>
