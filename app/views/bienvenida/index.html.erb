@@ -1,13 +1,5 @@
-<html>
-<head>
-  <title>Furgones</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
 <header>
-<div class="container">
+<div class="container>
 <nav class="navbar navbar-default" "color"="red"">
   <ul class="nav nav-pills">
   <li role="presentation" class="dropdown">
@@ -16,7 +8,6 @@
     </a>
     <ul class="dropdown-menu">
         <li role="presentation"><%= link_to 'Apoderados', controller: 'apoderados' %></li>
-        <li role="presentation"><%= link_to 'Alumnos', controller: 'alumnos' %></li>
         <li role="presentation"><%= link_to 'Colegios', controller: 'colegios' %></li>
         <li role="presentation"><%= link_to 'Furgones', controller: 'furgons' %></li>
         <li role="presentation"><%= link_to 'Trabajador', controller: 'trabajadors' %></li>
@@ -26,5 +17,3 @@
 </nav>
 </ul>
 </header>
-</body>
-</html>

@@ -1,6 +1,7 @@
 <h1>Listing alumnos</h1>
 
-<table>
+<div class="panel panel-default">
+<table class="table">
   <thead>
     <tr>
       <th>Nombre</th>
@@ -20,14 +21,15 @@
         <td><%= alumno.id_apoderado %></td>
         <td><%= alumno.id_colegio %></td>
         <td><%= alumno.id_furgon_integer %></td>
-        <td><%= link_to 'Show', alumno %></td>
-        <td><%= link_to 'Edit', edit_alumno_path(alumno) %></td>
-        <td><%= link_to 'Destroy', alumno, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Mostrar', alumno %></td>
+        <td><%= link_to 'Editar', edit_alumno_path(alumno) %></td>
+        <td><%= link_to 'Eliminar', alumno, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>
 </table>
-
+</div>
 <br>
 
-<%= link_to 'New Alumno', new_alumno_path %>
+<%= link_to 'Agregar Alumno', new_alumno_path %>
+<td><%= link_to 'Atras', controller: 'bienvenida'%></td>
